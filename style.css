@@ -12,11 +12,11 @@ body {
 .top-half {
   height: 285px;
   background-color: #6943ff;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 h1 {
   color: white;
-  font-size: 30px;
+  font-size: 35px;
 }
 input {
   width: 117px;
@@ -41,4 +41,28 @@ input {
 button {
   width: 117px;
   height: 42px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #b295ff;
+  color: white;
+}
+.bottom-half {
+  background-color: #1f2937;
+  height: 445px;
+
+  align-content: center;
+}
+.col-1 {
+  background-color: #273549;
+  width: 500px;
+  height: 108px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
 }

@@ -50,7 +50,7 @@ button {
   transition: all 0.3s ease-in-out;
 }
 button:hover {
-  background-color: #b295ff;
+  background-color: #273549;
   color: white;
 }
 .bottom-half {

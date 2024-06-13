@@ -27,6 +27,8 @@ function convertNow() {
   poundValue.textContent = pounds.toFixed(2);
   let kilos = parseFloat(value / 2.205);
   kiloValue.textContent = kilos.toFixed(2);
+  //end of kilos and pounds
+  userInputValue.value = "";
 }
 
 const convertButton = document.querySelector("#convert-btn");

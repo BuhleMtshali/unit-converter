@@ -2,6 +2,8 @@ let inputElements = document.getElementsByClassName("input-value"); //this picks
 let feetValue = document.querySelector("#feet-value");
 let meterValue = document.querySelector("#meter-value");
 let userInputValue = document.querySelector("#input-el");
+let gallonLiter = document.querySelector("#gallon-liter-value");
+let literValue = document.querySelector("#liter-value");
 
 function convertNow() {
   let value = userInputValue.value;
@@ -13,6 +15,12 @@ function convertNow() {
   feetValue.textContent = feetToMeter.toFixed(2);
   let meterToFeet = parseFloat(value / 3.281);
   meterValue.textContent = meterToFeet.toFixed(2);
+  //end of the meter to feet
+  let gallonValue = parseFloat(value / 3.785);
+  gallonLiter.textContent = gallonValue.toFixed(2);
+  let liters = parseFloat(value * 3.785);
+  literValue.textContent = liters.toFixed(2);
+  //end of liters and gallons
 }
 
 const convertButton = document.querySelector("#convert-btn");
